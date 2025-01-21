@@ -25,7 +25,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             TodoAppTheme {
                 Surface(color = MaterialTheme.colors.background) {
-                    TodoApp()
+                    TodoApp(TodoViewModel(context = applicationContext))
                 }
             }
         }
